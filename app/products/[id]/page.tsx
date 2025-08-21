@@ -1,0 +1,13 @@
+type Props = {
+  params: { id: string };
+};
+
+export default function ProductPage({ params }: Props) {
+  const { id } = params;
+
+  return (
+    <div className="p-6">
+      <h1 className="text-2xl font-bold">Product {id}</h1>
+    </div>
+  );
+}
